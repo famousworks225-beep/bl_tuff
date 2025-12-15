@@ -1,0 +1,181 @@
+/*--global--*/
+*{
+    margin:0;
+    padding:0;
+}
+.footer-section{
+    background: #000;
+    padding:30px 40px;
+}
+.footer{
+    justify-content: space-between;
+    display:flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+.footer-first-section{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.footer-logo{
+    color:#83BFFF;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.footer-bio{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.footer-social-icon{
+    display:flex;
+    gap:10px;
+}
+.footer-social-icon a{
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.footer-social-icon a i{
+    color: #fff;
+    font-size: 18px;
+}
+.footer-second-section{
+    display:flex;
+}
+.footer-menulinks{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.footer-menulinks p{
+    font-family: 'DM Sans';
+    font-weight: 600;
+    font-style: 'SemiBold';
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#fff;
+}
+.memulinks-lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.memulinks-lists li{
+    margin: 6px 0;
+}
+.memulinks-lists a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0px;
+}
+.footer-thrid-section{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    color: #fff;
+}
+.footer-thrid-section p{
+    margin: 0;
+    color: #fff;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-style: 'Regular';
+    line-height:1.6;
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 0%;
+}
+
+.footer-thrid-section p:first-child{
+    font-family: 'DM Sans';
+    font-weight: 600;
+    font-style: 'SemiBold';
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.footer-copyright{
+    text-align: center;
+    color:#fff;
+    padding-top:10px;
+}
+
+/*--responsive design for footer*/
+@media (max-width: 768px){
+        .footer-section{ 
+            padding: 22px;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+        }
+        .footer-logo{ 
+            font-size: 22px; 
+        }
+        .footer-bio{ 
+            font-size: 18px; 
+        }
+        .memulinks-lists a{ 
+            font-size: 15px; 
+        }
+        .footer-social-icon{
+           justify-content: center;
+        }
+        .footer-social-icon a{ 
+            width: 36px; 
+            height: 36px; 
+        }   
+    }
+    @media (max-width: 480px){
+        .footer-section{ 
+            padding: 14px; 
+        }
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+         .footer-logo{ 
+            font-size: 20px;
+        }
+        .footer-bio{ 
+            font-size: 16px; 
+        }
+        .memulinks-lists a{ 
+            font-size: 14px; 
+        }
+        .footer-thrid-section p{ 
+            font-size: 14px; 
+        }
+        .footer-social-icon a{ 
+            width: 34px; 
+            height: 34px; 
+        }
+    }

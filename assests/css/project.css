@@ -1,0 +1,277 @@
+/*--page header--*/
+.page-header {
+  padding: 30px 60px;
+}
+
+.tag {
+    display:inline-block; 
+    background:#000; 
+    color:#CEDF56;
+    padding:6px 12px; 
+    border-radius:3px; 
+    font-family: Raleway;
+    font-size: 28px;
+}
+
+.page-header h1 {
+    font-family: Raleway;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.page-header p {
+    font-size: 22px;
+}
+/* responsive design for page header */
+@media(max-width:768px){
+    .page-header{
+        margin-right: 20px;;
+    }
+    .page-header h1{
+        font-size:42px;
+    }
+}
+@media(max-width:480px){
+    .page-header{
+        padding:20px 30px
+    }
+    .page-header h1{
+        font-size:28px;
+    }
+}
+
+
+/*--banner--*/
+.banner img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+/*--creativity--*/
+.creativity {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.creativity h2 {
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/*--responsive design for creativity--*/
+@media(max-width:480px){
+    .creativity h2{
+        font-size:20px;
+    }
+}
+
+/*--stats--*/
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: center;
+}
+
+.stat-box {
+  width: 180px;
+  height: 110px;
+  background: #CFE34A;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 32px;
+  font-family: Raleway;
+}
+
+.stat-box p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+/*--responsive design for stats--*/
+@media(max-width:992px){
+    .stats{
+        margin:20px 0;
+        justify-content: center;
+    }
+    .stats-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:768px){
+    .stats-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+}
+
+@media(max-width:480px){
+    .stats-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 15px;
+    }
+    .stat-box {
+        width: 160px;
+        height: 100px;
+        font-size: 14px;
+    }
+    .stat-box h3 {
+        font-size: 28px;
+    }
+    .stat-box p {
+        font-size: 14px;
+    }
+}
+
+/*--project grid--*/
+.projects-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    background: #fff;
+}
+
+.project-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.project-body {
+    padding: 10px 5px;
+}
+
+.project-body h3 {
+    font-family: Raleway;
+    margin-bottom: 8px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.project-body p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/*--responsive design for project grid--*/
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:1024px){
+     .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+  .project-card img {
+    height: 300px;
+  }
+}
+@media(max-width:768px){
+    .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media(max-width:480px){
+    .projects-wrapper {
+    padding: 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .project-card img {
+    height: 220px;
+  }
+  .project-body p {
+    font-size: 16px;
+  }
+}
+
+/*--contact--*/
+.contact {
+  background: #CEDF56;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-flex {
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-flex h3 {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.contact-button {
+  background: #000;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/*--responsive design for contact--*/
+@media(max-width:768px){
+    .contact-flex{
+        font-size:28px;
+    }
+}
+@media(max-width:480px){
+  .contact-flex {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .contact-flex h3 {
+    font-size: 20px;
+  }
+}
